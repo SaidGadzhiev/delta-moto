@@ -1,0 +1,143 @@
+{
+  "theme": "dark",
+  "typography": {
+    "headings": {
+      "family": "'Oswald', 'Anton', sans-serif",
+      "style": "uppercase, italic, tracking-tight",
+      "treatment": "Bold italic uppercase with a signature gold underline. Use relative positioning with an absolute gold pseudo-element or border-bottom for the underline. Avoid standard centering unless explicitly requested (e.g., nav logo).",
+      "scales": {
+        "h1": "text-5xl md:text-7xl font-black leading-none",
+        "h2": "text-4xl md:text-5xl font-bold uppercase italic",
+        "h3": "text-2xl md:text-3xl font-bold uppercase italic",
+        "subheading": "text-lg md:text-xl font-semibold text-[#4A7FB5] uppercase tracking-wider"
+      }
+    },
+    "body": {
+      "family": "'Inter', 'Poppins', 'Helvetica Neue', sans-serif",
+      "scales": {
+        "base": "text-base leading-relaxed text-[#C9C9C9]",
+        "sm": "text-sm text-[#6E6E6E]"
+      }
+    },
+    "nav": {
+      "style": "uppercase tracking-[0.2em] text-sm font-semibold"
+    }
+  },
+  "colors": {
+    "background": "#121212",
+    "surface": "#1C1C1C",
+    "accent_gold": "#C9A227",
+    "accent_blue": "#4A7FB5",
+    "text_primary": "#FFFFFF",
+    "text_body": "#C9C9C9",
+    "text_muted": "#6E6E6E"
+  },
+  "visual_enhancers": {
+    "borders": "Crisp 1px solid #C9A227 for images and critical panels. Avoid soft radii; stick to sharp 0px corners or max 4px for a rugged, industrial precision.",
+    "shadows": "Minimal. Rely on 1px borders and contrasting dark panel backgrounds (#1C1C1C on #121212) instead of soft drop shadows.",
+    "textures": "High contrast, desaturated monochrome feel. Apply a `grayscale contrast-125 brightness-75` CSS filter to standard images if they are too colorful, allowing only the UI gold/blue to pop.",
+    "hover_states": "Gold accent (#C9A227) for interactive text. Buttons with gold borders transition to solid gold fill with #121212 text on hover."
+  },
+  "layouts": {
+    "spacing": "Generous. p-8, p-12, py-24. High density in forms, expansive in hero and manifesto.",
+    "grid": "CSS Grid for 'Your Experience' (grid-cols-1 md:grid-cols-3). Asymmetric bento style optionally for mission.",
+    "alignment": "Strict left alignment for content, mimicking editorial layouts. Asymmetric layouts over centered Bootstrap styles."
+  },
+  "motion": {
+    "hero": "On-load masked line-by-line reveal using Framer Motion (wrap text lines in overflow-hidden divs and translate Y). Subtle 3D parallax on the hero image (Framer Motion useScroll/useTransform).",
+    "scroll": "Lenis smooth scrolling for premium momentum.",
+    "interactions": "Hover states on the 'Your Experience' cards: slight image scale within a hidden overflow, border color shift.",
+    "marquee": "Use react-fast-marquee for an editorial ribbon if needed, slow smooth drift."
+  },
+  "accessibility": {
+    "contrast": "Ensure text colors meet AA standard. Text over images must have dark gradient overlays (bg-black/60).",
+    "prefers_reduced_motion": "Respect system settings."
+  },
+  "components": {
+    "nav": {
+      "type": "Sticky Header",
+      "design": "Centered logo, links Home/Services/About/Contact. Background #1C1C1C/90 with backdrop-blur-xl (Glassmorphism). Nav labels uppercase letter-spaced."
+    },
+    "hero": {
+      "type": "Kinetic Hero",
+      "design": "Full-width B&W motorcycle banner. Logo overlaid + dark gradient (bg-gradient-to-t from-[#121212] via-[#121212]/50 to-transparent). Parallax effect on scroll."
+    },
+    "mission": {
+      "type": "Split Section ('Our Mission')",
+      "design": "Photo left with 1px gold border. Heading (gold underlined) + paragraph + gold-outline 'Learn More' button right."
+    },
+    "experience": {
+      "type": "3-Column Grid ('Your Experience')",
+      "design": "Transport / Detailing / Storage steps. Steel blue sub-heading (#4A7FB5). Description. Gold-bordered photo. 'Learn More' link. Gold dividers flank the main title."
+    },
+    "carousel": {
+      "type": "Image Carousel ('The Delta Way')",
+      "design": "Horizontal. 4-5 photos, arrow nav, autoplay. Framer motion or Embla carousel."
+    },
+    "contact": {
+      "type": "Split Dark Panel",
+      "design": "bg-[#1C1C1C]. Left: Contact Form (First/Last name, Email, Phone, Message, gold Send button). Right: 'Contact Us' heading, phone, address, hours, embedded Google Map, Instagram/Facebook icons."
+    }
+  },
+  "media": {
+    "image_urls": {
+      "hero_banner": {
+        "url": "https://images.unsplash.com/photo-1681335056244-9dd3d5de8b60?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2OTV8MHwxfHNlYXJjaHwyfHxtb3RvcmN5Y2xlJTIwcmlkZXIlMjBkYXJrJTIwY2luZW1hdGljfGVufDB8fHx8MTc4NTcxNjUxN3ww&ixlib=rb-4.1.0&q=85",
+        "description": "Person sitting on a motorcycle in a dark parking garage"
+      },
+      "mission_photo": {
+        "url": "https://images.unsplash.com/photo-1759248762794-71a284210a55?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2OTV8MHwxfHNlYXJjaHwzfHxtb3RvcmN5Y2xlJTIwcmlkZXIlMjBkYXJrJTIwY2luZW1hdGljfGVufDB8fHx8MTc4NTcxNjUxN3ww&ixlib=rb-4.1.0&q=85",
+        "description": "Motorcycle parked on dark narrow street"
+      },
+      "service_transport": {
+        "url": "https://images.unsplash.com/photo-1604678113747-e0233bc6d30a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzV8MHwxfHNlYXJjaHwxfHxtb3RvcmN5Y2xlJTIwdHJhbnNwb3J0JTIwdHJ1Y2slMjBkYXJrfGVufDB8fHx8MTc4NTcxNjUxNnww&ixlib=rb-4.1.0&q=85",
+        "description": "Black and red sports bike on asphalt"
+      },
+      "service_detailing": {
+        "url": "https://images.unsplash.com/photo-1614585849038-272ee92d30fa?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzV8MHwxfHNlYXJjaHwzfHxtb3RvcmN5Y2xlJTIwbWVjaGFuaWMlMjBnYXJhZ2UlMjBkYXJrfGVufDB8fHx8MTc4NTcxNjUxNnww&ixlib=rb-4.1.0&q=85",
+        "description": "Stainless steel hand tool on dark table"
+      },
+      "service_storage": {
+        "url": "https://images.unsplash.com/photo-1511268767685-02638fbfb6e5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzV8MHwxfHNlYXJjaHwyfHxtb3RvcmN5Y2xlJTIwbWVjaGFuaWMlMjBnYXJhZ2UlMjBkYXJrfGVufDB8fHx8MTc4NTcxNjUxNnww&ixlib=rb-4.1.0&q=85",
+        "description": "Dark parking lot scene"
+      },
+      "carousel_1": {
+        "url": "https://images.unsplash.com/photo-1705217652829-b80b35bc9e79?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2OTV8MHwxfHNlYXJjaHw0fHxtb3RvcmN5Y2xlJTIwcmlkZXIlMjBkYXJrJTIwY2luZW1hdGljfGVufDB8fHx8MTc4NTcxNjUxN3ww&ixlib=rb-4.1.0&q=85",
+        "description": "Dark cinematic rider"
+      },
+      "carousel_2": {
+        "url": "https://images.unsplash.com/photo-1636012564241-38e6256ba1d4?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2OTV8MHwxfHNlYXJjaHwxfHxtb3RvcmN5Y2xlJTIwcmlkZXIlMjBkYXJrJTIwY2luZW1hdGljfGVufDB8fHx8MTc4NTcxNjUxN3ww&ixlib=rb-4.1.0&q=85",
+        "description": "Riding motorcycle through forest"
+      },
+      "carousel_3": {
+        "url": "https://images.unsplash.com/photo-1781781987193-29cf639c3c10?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzV8MHwxfHNlYXJjaHwyfHxtb3RvcmN5Y2xlJTIwdHJhbnNwb3J0JTIwdHJ1Y2slMjBkYXJrfGVufDB8fHx8MTc4NTcxNjUxNnww&ixlib=rb-4.1.0&q=85",
+        "description": "Red truck scooter dark"
+      },
+      "carousel_4": {
+        "url": "https://images.unsplash.com/photo-1775608523926-8c86561baf96?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzV8MHwxfHNlYXJjaHwzfHxtb3RvcmN5Y2xlJTIwdHJhbnNwb3J0JTIwdHJ1Y2slMjBkYXJrfGVufDB8fHx8MTc4NTcxNjUxNnww&ixlib=rb-4.1.0&q=85",
+        "description": "City street at night wet pavement"
+      }
+    }
+  },
+  "libraries": {
+    "motion": "framer-motion",
+    "scrolling": "lenis",
+    "carousel": "embla-carousel-react",
+    "icons": "lucide-react"
+  },
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "You tend to converge toward generic outputs. Avoid this: make creative, distinctive frontends that surprise and delight.",
+    "Do not use transparent backgrounds on dropdowns, modals, or sticky headers. Always use solid (#1C1C1C) or heavily blurred (backdrop-blur-xl bg-[#1C1C1C]/90) backgrounds.",
+    "Use 2-3x more spacing than feels comfortable. Cramped designs look cheap.",
+    "Create depth through layered design elements with z-index hierarchy, but keep borders sharp (0px or 4px radius max for brutalist/moto feel).",
+    "Never use generic centered layouts except for the nav logo and 'The Delta Way' section title. Asymmetry creates tension, tension creates interest.",
+    "Every interaction needs micro-animations - hover states, transitions. Static = dead.",
+    "All interactive elements MUST include a data-testid attribute for automated testing.",
+    "For the signature gold underline: use a custom span with absolute bottom border or underline offset with #C9A227 color.",
+    "Masked line-by-line reveal: Wrap lines in overflow-hidden divs and animate the inner text sliding up using framer-motion.",
+    "Contact form: raw html/tailwind or heavily customized shadcn. Inputs should be transparent bg with bottom borders or solid dark #1C1C1C with 1px gold border on focus. Yellow gold submit button.",
+    "Never use generic placeholders. Use the provided image URLs.",
+    "Typography MUST use Oswald or Anton for headings, styled as Bold Italic Uppercase."
+  ],
+  "instructions_to_main_agent": "Build exactly as requested. Start with raw HTML/Tailwind for the layouts, avoid restrictive Shadcn Card wrappers for creative sections. Install framer-motion and lenis for scroll interactions. The gold-underline on italic uppercase Oswald/Anton headings is a signature piece—nail it. Desaturate the placeholder images using CSS filters (e.g., `grayscale contrast-125 brightness-75`) if they are too colorful, and allow the gold and blue accents to pop."
+}
