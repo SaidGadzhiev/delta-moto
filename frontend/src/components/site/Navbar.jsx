@@ -68,7 +68,7 @@ export const Navbar = () => {
       {open && (
         <div className="md:hidden bg-[#1C1C1C] border-t border-white/5 px-5 py-6 flex flex-col gap-5">
           {LINKS.map((l) => (
-            <NavLink key={l.id} {...l} onClick={() => go(l.id)} />
+            <NavLink key={l.id} {...l} suffix="-mobile" onClick={() => go(l.id)} />
           ))}
         </div>
       )}
@@ -76,9 +76,9 @@ export const Navbar = () => {
   );
 };
 
-const NavLink = ({ label, onClick }) => (
+const NavLink = ({ label, onClick, suffix = "" }) => (
   <button
-    data-testid={`nav-link-${label.toLowerCase()}`}
+    data-testid={`nav-link-${label.toLowerCase()}${suffix}`}
     onClick={onClick}
     className="text-[13px] font-medium uppercase tracking-[0.22em] text-white/80 hover:text-[#C9A227] transition-colors"
   >

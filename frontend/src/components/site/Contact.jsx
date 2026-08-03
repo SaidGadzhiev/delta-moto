@@ -49,7 +49,7 @@ export const Contact = () => {
               <Field name="last" placeholder="Last Name" value={form.last} onChange={set("last")} error={errors.last} />
             </div>
             <Field name="email" placeholder="Email" type="email" value={form.email} onChange={set("email")} error={errors.email} />
-            <Field name="phone" placeholder="Phone Number" value={form.phone} onChange={set("phone")} />
+            <Field name="phone-input" placeholder="Phone Number" value={form.phone} onChange={set("phone")} />
             <div>
               <textarea
                 data-testid="contact-message"
