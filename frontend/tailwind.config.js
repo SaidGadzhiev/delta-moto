@@ -7,6 +7,21 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        display: ['Oswald', 'Anton', 'sans-serif'],
+        anton: ['Anton', 'sans-serif'],
+        body: ['"Helvetica Neue LT"', 'Inter', 'sans-serif'],
+      },
+      colors: {
+        dm: {
+          bg: '#121212',
+          surface: '#1C1C1C',
+          gold: '#C9A227',
+          blue: '#4A7FB5',
+          body: '#C9C9C9',
+          muted: '#6E6E6E',
+        },
+      },
       borderRadius: {
         lg: 'var(--radius)',
         md: 'calc(var(--radius) - 2px)',
