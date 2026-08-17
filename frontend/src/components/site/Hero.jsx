@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowDown } from "lucide-react";
-import { LOGO_WHITE, IMG } from "@/data/site";
+import { IMG } from "@/data/site";
 import { scrollToId } from "@/hooks/useLenis";
 
 const line = {
@@ -53,14 +53,6 @@ export const Hero = () => {
         style={{ opacity: fade }}
         className="relative z-10 h-full max-w-7xl mx-auto px-5 md:px-10 flex flex-col justify-end pb-20 md:pb-24"
       >
-        <motion.img
-          src={LOGO_WHITE}
-          alt="Delta Moto"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.1 }}
-          className="w-[280px] md:w-[440px] mb-8 md:mb-10"
-        />
         <h1 className="font-display font-bold italic uppercase text-white leading-[0.9] text-[13vw] sm:text-6xl md:text-7xl lg:text-8xl max-w-5xl">
           <Line i={0}>Ride In.</Line>
           <Line i={1}>

@@ -34,7 +34,7 @@ export const Navbar = () => {
           : "bg-transparent"
       }`}
     >
-      <nav className="max-w-7xl mx-auto px-5 md:px-10 h-[70px] grid grid-cols-3 items-center">
+      <nav className="max-w-7xl mx-auto px-5 md:px-10 h-[72px] md:h-[92px] grid grid-cols-3 items-center">
         <div className="hidden md:flex items-center gap-9">
           {LINKS.slice(0, 2).map((l) => (
             <NavLink key={l.id} {...l} onClick={() => go(l.id)} />
@@ -46,7 +46,10 @@ export const Navbar = () => {
           onClick={() => go("home")}
           className="justify-self-start md:justify-self-center col-start-1 md:col-start-2"
         >
-          <img src={LOGO_WHITE} alt="Delta Moto" className="h-9 md:h-11 w-auto" />
+          <img
+            src={LOGO_WHITE}
+            alt="Delta Moto"
+            className="h-14 md:h-[70px] w-auto" />
         </button>
 
         <div className="hidden md:flex items-center gap-9 justify-self-end">
