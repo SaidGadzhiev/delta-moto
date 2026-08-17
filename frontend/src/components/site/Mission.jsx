@@ -25,7 +25,7 @@ export const Mission = () => (
       <div>
         <Reveal>
           <span className="text-[#4A7FB5] uppercase tracking-[0.25em] text-sm font-semibold">
-            01 — Who We Are
+            01 · Who We Are
           </span>
         </Reveal>
         <Reveal delay={0.05}>
@@ -35,7 +35,7 @@ export const Mission = () => (
         </Reveal>
         <Reveal delay={0.1}>
           <p className="mt-8 text-lg md:text-xl leading-relaxed text-dm-body font-light max-w-xl">
-            Riders hand over a machine they love — and we earn that trust every
+            Riders hand over a machine they love, and we earn that trust every
             single job. Real garages, real hands, real Montreal streets. No
             stock-photo promises, no corporate runaround.
           </p>

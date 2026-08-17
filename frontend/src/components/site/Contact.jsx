@@ -31,7 +31,7 @@ export const Contact = () => {
       toast.error("Please check the highlighted fields.");
       return;
     }
-    toast.success("Message sent — we'll ring you back shortly.");
+    toast.success("Message sent, we'll ring you back shortly.");
     setForm(EMPTY);
   };
 

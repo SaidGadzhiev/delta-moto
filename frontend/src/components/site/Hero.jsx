@@ -67,7 +67,7 @@ export const Hero = () => {
           className="mt-7 max-w-xl text-base md:text-lg text-dm-body font-light"
         >
           Montreal's trusted crew for motorcycle transport, detailing & storage.
-          We move it, we clean it, we store it — you ride when you're ready.
+          We move it, we clean it, we store it, you ride when you're ready.
         </motion.p>
 
         <motion.button

@@ -43,13 +43,13 @@ export const STEPS = [
     n: "01",
     step: "Step 1",
     title: "Transport",
-    body: "Enclosed pickup and drop-off across Montreal. Soft ties, wheel chocks, no scratches — your machine rides in a padded rig, secured by hands that ride too.",
+    body: "Enclosed pickup and drop-off across Montreal. Soft ties, wheel chocks, no scratches. Your machine rides in a padded rig, secured by hands that ride too.",
   },
   {
     n: "02",
     step: "Step 2",
     title: "Detailing",
-    body: "Chrome, chain, and every hidden corner. A full hand wash and finish that brings the bike back to showroom — soap, water, patience, repeat.",
+    body: "Chrome, chain, and every hidden corner. A full hand wash and finish that brings the bike back to showroom. Soap, water, patience, repeat.",
   },
   {
     n: "03",
